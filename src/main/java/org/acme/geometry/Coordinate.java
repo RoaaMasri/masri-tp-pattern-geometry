@@ -4,12 +4,12 @@ public class Coordinate {
 	double x;
 	double y;
 	
-	public void Coordinate() {
+	public Coordinate() {
 		x = 0.0;
 		y = 0.0;
 	}
 	
-	public void Coordinate(double x, double y) {
+	public Coordinate(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
