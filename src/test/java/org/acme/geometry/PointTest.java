@@ -8,9 +8,8 @@ public class PointTest {
 
 	@Test
 	public void testDefaultConstructor(){
-		Coordinate c = new Coordinate(0.0,0.0);
 		Point p = new Point();
-		Assert.assertEquals(c, p.getCoordinate());
+		Assert.assertEquals(true, p.getCoordinate().isEmpty());
 	}
 	
 	@Test
