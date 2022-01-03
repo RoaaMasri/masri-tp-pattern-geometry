@@ -11,7 +11,7 @@ public class LineString implements Geometry{
 		this.points = new ArrayList<Point>();
 	}
 	
-	public LineString(ArrayList<Point> points) {
+	public LineString(List<Point> points) {
 		if(points == null) {
 			this.points = new ArrayList<Point>();
 		}
