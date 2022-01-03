@@ -15,10 +15,18 @@ public class Coordinate {
 	}
 	
 	public double getX() {
-		return x;
+		return this.x;
 	}
 	
 	public double getY() {
-		return y;
+		return this.y;
+	}
+
+	public Boolean isEmpty() {
+	  	if(Double.isNaN(x)|| Double.isNaN(y)){
+            return true;
+        }
+
+        return false;
 	}
 }
