@@ -1,9 +1,11 @@
 package org.acme.geometry;
 
 public interface Geometry {
-	 String getType();
+	 public String getType();
 
-	 Boolean isEmpty();
+	 public Boolean isEmpty();
 	 
-	 void translate(double dx, double dy);
+	 public void translate(double dx, double dy);
+	 
+	 public Geometry clone();
 }

@@ -42,5 +42,8 @@ public class Point implements Geometry {
 		this.coordinate = tcoordinate;
 	}
 	
-
+	@Override
+	public Point clone(){
+		return new Point(this.coordinate);
+	}
 }

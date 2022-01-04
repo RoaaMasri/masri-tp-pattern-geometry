@@ -45,6 +45,14 @@ public class LineString implements Geometry{
         }        
     }
 	
+	@Override
+	public LineString clone(){
+		List<Point> pointsCopy = new ArrayList<Point>();
+        for (Point point : points) {
+            pointsCopy.add(point.clone());
+        }
+        return new LineString(pointsCopy);
+	}
 	
 
 }
