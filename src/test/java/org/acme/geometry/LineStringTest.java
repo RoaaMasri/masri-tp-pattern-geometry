@@ -11,10 +11,11 @@ public class LineStringTest {
 	public static final double EPSILON = 1.0e-15;
 
 	@Test
-	public void testDefaultConstructor(){
+	public void testDefaultConstructorBehavior(){
 		LineString l = new LineString();
-		Assert.assertEquals(true, l.isEmpty());
+		Assert.assertEquals(0, l.getNumPoints());
 	}
+	
 	
 	@Test
 	public void testConstructo(){
@@ -30,8 +31,17 @@ public class LineStringTest {
 		
 		LineString l = new LineString(points);
 		
-		Assert.assertEquals(false, l.isEmpty());
-		Assert.assertEquals(2, l.getNumPoints());
+		Assert.assertEquals(2, l.getNumPoints(), EPSILON);
 		Assert.assertEquals(A, l.getPointN(0));
+	}
+	
+	@Test
+	public void testIsEmpty(){
+		
+	}
+	
+	@Test
+	public void testTranslate(){
+		
 	}
 }

@@ -5,8 +5,7 @@ public class Coordinate {
 	double y;
 	
 	public Coordinate() {
-		x = 0.0;
-		y = 0.0;
+		this(0.0, 0.0);
 	}
 	
 	public Coordinate(double x, double y) {

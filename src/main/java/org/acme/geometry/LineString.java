@@ -12,12 +12,8 @@ public class LineString implements Geometry{
 	}
 	
 	public LineString(List<Point> points) {
-		if(points == null) {
-			this.points = new ArrayList<Point>();
-		}
-		else {
-			this.points = points;
-		}
+		assert (points != null);
+		this.points = points;
 	}
 	
 	public int getNumPoints() {
@@ -48,5 +44,7 @@ public class LineString implements Geometry{
             
         }        
     }
+	
+	
 
 }
