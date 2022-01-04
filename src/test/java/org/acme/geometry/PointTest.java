@@ -30,9 +30,11 @@ public class PointTest {
 	
 	@Test
 	public void testIsEmpty() {
+		Point p1 = new Point();
 		Coordinate c = new Coordinate(3.0,4.0);
-		Point p = new Point(c);
-		Assert.assertEquals(false,p.isEmpty());
+		Point p2 = new Point(c);
+		Assert.assertTrue(p1.isEmpty());
+		Assert.assertFalse(p2.isEmpty());
 	}
 	
 	@Test
@@ -46,14 +48,4 @@ public class PointTest {
 		
 	}
 	
-	@Test
-	public void testClone() {
-		Coordinate c = new Coordinate(3.0,4.0);
-		Point p = new Point(c);
-		Point pc = p.clone();
-		
-		Assert.assertEquals(pc.getCoordinate().getX(), p.getCoordinate().getX(), EPSILON);
-		Assert.assertEquals(pc.getCoordinate().getY(), p.getCoordinate().getY(), EPSILON);
-
-	}
 }
