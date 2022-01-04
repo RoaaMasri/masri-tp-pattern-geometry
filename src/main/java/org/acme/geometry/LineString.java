@@ -58,12 +58,13 @@ public class LineString implements Geometry{
 	public Envelope getEnvelope() {
 		EnvelopeBuilder builder = new EnvelopeBuilder();
         for (Point point : points) {
-            if (!point.isEmpty()) {
-                builder.insert(point.getCoordinate());
-            } 
+			builder.insert(point.getCoordinate());
         }
         return builder.build();
 	}
 	
-
+	@Override
+	public void accept(GeometryVisitor visitor) {
+		visitor.visit(this);
+	}
 }

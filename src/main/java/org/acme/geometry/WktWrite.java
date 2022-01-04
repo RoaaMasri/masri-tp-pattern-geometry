@@ -8,7 +8,7 @@ public class WktWrite {
     public String write(Geometry geometry){
         String type = geometry.getType().toUpperCase();
         if (geometry.isEmpty()){
-            return (type + "EMPTY");
+            return (type + " EMPTY");
         }
         else{
             if (geometry instanceof Point){

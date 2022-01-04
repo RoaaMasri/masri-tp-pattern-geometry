@@ -5,7 +5,7 @@ public class Coordinate {
 	double y;
 	
 	public Coordinate() {
-		this(0.0, 0.0);
+		this(Double.NaN, Double.NaN);
 	}
 	
 	public Coordinate(double x, double y) {

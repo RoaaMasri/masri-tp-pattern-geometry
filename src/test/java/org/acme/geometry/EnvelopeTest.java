@@ -10,10 +10,10 @@ public class EnvelopeTest {
 	@Test
 	public void testDefaultConstructor(){
 		Envelope en = new Envelope();
-		Assert.assertEquals(0.0, en.getXmin(), EPSILON);
-		Assert.assertEquals(0.0, en.getYmin(), EPSILON);
-		Assert.assertEquals(0.0, en.getXmax(), EPSILON);
-		Assert.assertEquals(0.0, en.getYmax(), EPSILON);
+		Assert.assertEquals(Double.NaN, en.getXmin(), EPSILON);
+		Assert.assertEquals(Double.NaN, en.getYmin(), EPSILON);
+		Assert.assertEquals(Double.NaN, en.getXmax(), EPSILON);
+		Assert.assertEquals(Double.NaN, en.getYmax(), EPSILON);
 	}
 	
 	public void testConstructor(){
