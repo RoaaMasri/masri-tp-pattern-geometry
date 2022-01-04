@@ -31,5 +31,16 @@ public class Point implements Geometry {
 	public Boolean isEmpty() {
 		return this.coordinate.isEmpty();
 	}
+	
+	@Override
+	public void translate(double dx, double dy) {
+		double xt = this.coordinate.getX() + dx;
+		double yt = this.coordinate.getY() + dy;
+		
+		Coordinate tcoordinate = new Coordinate(xt, yt);
+		
+		this.coordinate = tcoordinate;
+	}
+	
 
 }
