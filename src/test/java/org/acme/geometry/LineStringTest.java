@@ -103,6 +103,5 @@ public class LineStringTest {
 		Assert.assertEquals(4.0, l.getPointN(0).getCoordinate().getY(),EPSILON);
 		Assert.assertEquals(5.0, l.getPointN(1).getCoordinate().getX(), EPSILON);
 		Assert.assertEquals(4.0, l.getPointN(1).getCoordinate().getY(),EPSILON);
-
 	}
 }

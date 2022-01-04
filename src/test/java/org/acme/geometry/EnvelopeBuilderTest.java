@@ -7,10 +7,6 @@ public class EnvelopeBuilderTest {
 	public static final double EPSILON = 1.0e-15;
 
 	@Test
-	public void testDefaultConstructor(){
-		//EnvelopeBuilder enB = new EnvelopeBuilder();
-	}
-	
 	public void testInsertBuild() {
 		EnvelopeBuilder builder = new EnvelopeBuilder();
 		builder.insert(new Coordinate(0.0,1.0));
@@ -20,6 +16,6 @@ public class EnvelopeBuilderTest {
 		Assert.assertEquals(0.0, result.getXmin(), EPSILON);
 		Assert.assertEquals(2.0, result.getXmax(), EPSILON);
 		Assert.assertEquals(0.0, result.getYmin(), EPSILON);
-		Assert.assertEquals(3.0, result.getXmax(), EPSILON);
+		Assert.assertEquals(3.0, result.getYmax(), EPSILON);
 	}
 }
