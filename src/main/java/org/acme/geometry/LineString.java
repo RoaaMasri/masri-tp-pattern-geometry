@@ -53,6 +53,17 @@ public class LineString implements Geometry{
         }
         return new LineString(pointsCopy);
 	}
+
+	@Override
+	public Envelope getEnvelope() {
+		EnvelopeBuilder builder = new EnvelopeBuilder();
+        for (Point point : points) {
+            if (!point.isEmpty()) {
+                builder.insert(point.getCoordinate());
+            } 
+        }
+        return builder.build();
+	}
 	
 
 }
