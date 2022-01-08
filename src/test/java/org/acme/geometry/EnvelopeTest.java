@@ -28,7 +28,7 @@ public class EnvelopeTest {
 	public void testIsEmpty(){
     	Envelope en1 = new Envelope();
     	Envelope en2 = new Envelope(new Coordinate(2.0, 1.0), new Coordinate(4.0, 3.0));
-		Assert.assertFalse(en1.isEmpty());
+		Assert.assertTrue(en1.isEmpty());
         Assert.assertFalse(en2.isEmpty());
 	}
     
