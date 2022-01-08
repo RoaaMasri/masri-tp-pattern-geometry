@@ -23,7 +23,7 @@ public class LogGeometryVisitor implements GeometryVisitor {
 
     @Override
     public void visit(LineString lineString) {
-        out.print("Je suis une polyligne définie par " + lineString.getNumPoints() 
+        out.print("Je suis une polyligne definie par " + lineString.getNumPoints() 
         + " point(s)");
         
     }
